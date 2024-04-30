@@ -23,6 +23,9 @@ export async function POST(request) {
 				quantity: 1
 			}
 		],
+		metadata: {
+			productId: body.id
+		},
 		mode: 'payment'
 	})
 	return NextResponse.json(session)
